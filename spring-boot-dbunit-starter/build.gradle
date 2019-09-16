@@ -1,0 +1,6 @@
+bootJar.enabled = false
+jar.enabled = true
+
+dependencies {
+    compile(":spring-boot-dbunit-autoconfigure")
+}
