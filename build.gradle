@@ -4,16 +4,22 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 subprojects {
     group 'com.github.anyjava'
-    version '1.0-SNAPSHOT'
+    version '1.0.0'
 
     apply plugin: 'java'
     apply plugin: 'eclipse'
